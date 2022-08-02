@@ -1,0 +1,23 @@
+
+
+
+body {
+    font-family: "C6 Sans Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.bg-main {
+    background-image: url(../Images-M/hero-bg.JPEG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+}
+
+
+.text-main h2, h1, p, a{
+    margin-right: 10rem;
+}
+
+.svg-test{
+    width: 10rem;
+}

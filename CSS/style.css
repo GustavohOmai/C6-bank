@@ -1,0 +1,52 @@
+:root {
+    --gray: rgb(220,216, 213);
+    --grayhover: rgb(210, 206, 201);
+    --grayone: rgb(108, 117, 125);
+}
+
+.gray {
+    background-color: var(--gray);
+}
+
+.openaccount {
+    border-radius: 40px;
+    padding: .5rem 5rem;
+}
+
+.openaccount:hover {
+    background-color: var(--grayhover);
+    color: var(--grayone);
+}
+
+.fs-7 {
+    font-size: .8rem;
+}
+
+.dropdown-divider {
+    margin: 0 1rem;
+}
+
+.dropdown-menu {
+    width: 15rem;
+}
+
+.dropdown-item:hover {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.itemhover {
+    color: black;
+    transition: .2s;
+}
+
+.itemhover:hover {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 7px;
+    transform: scale(1.1);
+}

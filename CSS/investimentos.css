@@ -1,23 +1,43 @@
 
 
 
-body {
-    font-family: "C6 Sans Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+
 
 .bg-main {
     background-image: url(../Images-M/hero-bg.JPEG);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
     height: 100vh;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
 }
 
 
-.text-main h2, h1, p, a{
+/* .text-main h2, h1, p, a{
     margin-right: 10rem;
+} */
+
+.text-main  {
+    width: 936px;
+    margin: 0 415px;
+    padding: 0 29px;
+}
+
+.text-main p{ 
+    margin: 1.7rem 16rem 3.7rem 0;
+}
+.text-main span {
+    font-weight: bold;
+}
+
+.test-main a {
+    padding: 0 115rem;
 }
 
 .svg-test{
-    width: 10rem;
+    width: 8rem;
+    margin-bottom: .6rem
 }

@@ -73,18 +73,14 @@ body {
     width: 21%;
 }
 
-.square {
-  position: absolute;
-  
-
+.image-container img {
+    width: 40%;
 }
 
-.square-1 {
-    top: 1400px;
-}
-
-.square-2 {
-
-  top: 1450px;
-  left: 500px;
+#phone {
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    left: 520px;
+    top: 1600px;
 }

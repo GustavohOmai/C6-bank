@@ -1,34 +1,32 @@
-
-
-
-
-
 .bg-main {
     background-image: url(../Images-M/hero-bg.JPEG);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.centralizer-div {
     justify-content: end;
     display: flex;
     flex-direction: column;
     padding: 64px;
+    height: 100vh;
 }
 
 
-/* .text-main h2, h1, p, a{
-    margin-right: 10rem;
-} */
-
-.text-main  {
+.text-main {
     width: 936px;
-    margin: 0 415px;
-    padding: 0 29px;
+    margin: 0 350px;
+    padding: 0 24px;
 }
 
-.text-main p{ 
+.text-main p {
     margin: 1.7rem 16rem 3.7rem 0;
 }
+
 .text-main span {
     font-weight: bold;
 }
@@ -37,7 +35,7 @@
     padding: 0 115rem;
 }
 
-.svg-test{
+.svg-test {
     width: 8rem;
     margin-bottom: .6rem
 }

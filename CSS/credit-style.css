@@ -6,9 +6,10 @@
 
 body{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-:root{
+:root{ 
     --text-color:#Fafafa;
     --btn-background-color: rgb(43, 43, 43);
     --gray: rgb(220,216, 213);
@@ -36,6 +37,11 @@ body{
 
 .dropdown-divider {
     margin: 0 1rem;
+}
+
+.header-position{
+    top: 0px;
+    position: fixed;
 }
 
 .dropdown-menu {
@@ -127,10 +133,6 @@ a {
     max-width: 25%;
 }
 
-.cartoes-background{
-    background: rgb(255,193,144);
-    background: linear-gradient(280deg, rgba(255,193,144,1) 0%, rgb(145, 59, 133) 100%);
-}
 
 .cartoes{
     margin-left: 12rem;
@@ -147,18 +149,13 @@ a {
     margin-bottom: 2.5rem;
 }
 
-.cartao-img{
-    margin-left: 20rem;
-}
+
 
 .cartao-img img{
     width: 15rem;
     transition: .5s ;
 }
 
-.cartao-img img:hover{
-    transform: scale(1.2) rotate(-25deg);
-}
 
 .acqua{
     height: 2.5rem;
@@ -166,6 +163,14 @@ a {
     border: none;
     background-color: #00A1B7 ;
     color: var(--text-color);
+    position: absolute;
+    left: 98%;
+    margin-top: 17.5rem;
+    transition: .5s;
+}
+
+.acqua:hover{
+    left: 88%;
 }
 
 .rainbow{
@@ -174,6 +179,14 @@ a {
     border: none;
     background: linear-gradient(280deg, rgba(168,163,190,1) 0%, rgba(208,167,169,1) 100%);
     color: var(--text-color);
+    position: absolute;
+    left: 98%;
+    margin-top: 15rem;
+    transition: .5s;
+}
+
+.rainbow:hover{
+    left: 88%;
 }
 
 .gold{
@@ -182,6 +195,14 @@ a {
     border: none;
     background-color: #CFA754 ;
     color: var(--text-color);
+    position: absolute;
+    left: 98%;
+    margin-top: 12.5rem;
+    transition: .5s;
+}
+
+.gold:hover{
+    left: 88%;
 }
 
 .spice{
@@ -190,6 +211,14 @@ a {
     border: none;
     background-color: #D78D43;
     color: var(--text-color);
+    position: absolute;
+    left: 98%;
+    margin-top: 10rem;
+    transition: .5s;
+}
+
+.spice:hover{
+    left: 88%;
 }
 
 
@@ -199,6 +228,14 @@ a {
     border: none;
     background: linear-gradient(280deg, rgba(255,193,144,1) 0%, rgb(145, 59, 133) 100%);
     color: var(--text-color);
+    position: absolute;
+    left: 98%;
+    margin-top: 7.5rem;
+    transition: .5s;
+}
+
+.sunset:hover{
+    left: 88%;
 }
 
 .boreal{
@@ -207,6 +244,14 @@ a {
     width: 12rem;
     border: none;
     color: var(--text-color);
+    position: absolute;
+    left: 98%;
+    margin-top: 5rem;
+    transition: .5s;
+}
+
+.boreal:hover{
+    left: 88%;
 }
 
 .carbon{
@@ -215,12 +260,74 @@ a {
     width: 12rem;
     border: none;
     color: var(--text-color);
+    position: absolute;
+    left: 98%;
+    margin-top: 2.5rem;
+    transition: .5s;
+}
+
+.carbon:hover{
+    left: 88%;
+}
+
+.choose-color{
+    height: 17.5rem;
 }
 
 
-.choose-color{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    right: 0;
+.cartoes-background{
+    background: rgb(255,193,144);
+    background: linear-gradient(280deg, rgba(255,193,144,1) 0%, rgb(145, 59, 133) 100%);
+}
+
+.cartoes-backgroundacqua{
+    transition: .2s;
+    right: 0px;
+    background: #188798;
+}
+
+.cartoes-backgroundrainbow{
+    transition: .2s;
+    right: 0px;
+    background: linear-gradient(280deg, rgba(168,163,190,1) 0%, rgba(208,167,169,1) 100%);
+}
+.cartoes-backgroundgold{
+    transition: .2s;
+    right: 0px;
+    background: #D9B569;
+}
+
+.cartoes-backgroundspice{
+    transition: .2s;
+    right: 0px;
+    background: #E4A761;
+}
+.cartoes-backgroundsunset{
+    transition: .2s;
+    right: 0px;
+    background: linear-gradient(280deg, rgba(255,193,144,1) 0%, rgb(145, 59, 133) 100%);
+}
+.cartoes-backgroundboreal{
+    transition: .2s;
+    right: 0px;
+    background: linear-gradient(90deg,#68706B 0%, rgba(182,173,161,1) 100%);
+}
+.cartoes-backgroundcarbon{
+    transition: .2s;
+    right: 0px;
+    background-color: #1f1f1f ;
+}
+
+.cartao-background{
+    background: linear-gradient(90deg,#68706B 0%, rgba(182,173,161,1) 100%);
+}
+
+
+.cartao-img{
+    transition: 1s;
+    margin-left: 20rem;
+}
+
+.animation{
+    transform: scale(1.1) rotate(-25deg);
 }

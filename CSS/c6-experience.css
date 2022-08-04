@@ -190,3 +190,106 @@ section img {
     font-size: 1.05rem;
 }
 
+.badgecard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 5%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecardorange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(245, 90, 0, 10%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.badgecardred {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 5%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecardyellow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(245, 221, 0, 0.267);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecardgreen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 255, 0, 5%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecard img {
+    width: 34%;
+}
+.badgecardred img {
+    width: 34%;
+}
+.badgecardyellow img {
+    width: 34%;
+}
+.badgecardorange img {
+    width: 34%;
+}
+
+.badgecardgreen img {
+    width: 34%;
+}
+
+.welcome {
+    margin-left: .3rem;
+    margin-top: .8rem;
+    font-size: .9rem;
+}
+
+.badgecontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-titleone {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+

@@ -1,17 +1,20 @@
 window.onload = function() {
-var container = document.getElementById('container');
-var windowHeight = window.innerHeight;
-var windowWidth = window.innerWidth;
-var scrollArea = 800 - windowHeight;
-var square1 = document.getElementsByClassName('square')[0];
-var square2 = document.getElementsByClassName('square')[1];
+  window.onscroll = function() {
+        scroll();
+    }
 
-// update position of square 1 and square 2 when scroll event fires.
-window.addEventListener('scroll', function() {
-  var scrollTop = window.pageYOffset || window.scrollTop;
-  var scrollPercent = scrollTop/scrollArea || 0;
-
-  square2.style.left = scrollPercent*window.innerWidth + 'px';
-  square2.style.left = 800 - scrollPercent*window.innerWidth*0.6 + 'px';
-});
+    function scroll() {
+        if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("btn").style.background ="rgb(255, 193, 7)";
+            document.getElementById("btn").style.border ="none";
+            document.getElementById("btn").style.color ="rgb(0,0,0)";
+    
+        }
+        else {
+            document.getElementById("btn").style.background= "rgb(25, 25, 25)";
+            document.getElementById("btn").style.border ="white 1px solid";
+            document.getElementById("btn").style.color ="rgb(255,255,255)";
+        }
+    }
+  
 }

@@ -19,6 +19,18 @@
     border: 1px white solid;
 }
 
+.positionfixed {
+    position: fixed;
+    top: 0;
+    z-index: 100001;
+    margin: 0 !important;
+}
+
+.mg-25 {
+    margin: 0 !important;
+}
+
+
 .navbar-brand:hover {
     color: white;
 }
@@ -50,6 +62,11 @@ body {
     padding: .5rem 6rem;
 }
 
+.btnconfig {
+    border-radius: 40px;
+    padding: .5rem 6rem;
+}
+
 .w-60 {
     width: 60%;
 }
@@ -73,18 +90,206 @@ body {
     width: 21%;
 }
 
-.square {
-  position: absolute;
-  
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 40rem;
 
 }
 
-.square-1 {
-    top: 1400px;
+section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
 }
 
-.square-2 {
-
-  top: 1450px;
-  left: 500px;
+section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
 }
+
+section img {
+    width: 20%;
+}
+
+.marginnegativa {
+    margin-top: -40rem;
+}
+
+.containerwork {
+    width: 48%;
+    height: 100%;
+}
+
+.fs-8 {
+    font-size: 3.6rem;
+}
+
+.hidden {
+    border-top: 1px solid rgb(112, 106, 108);
+    color: rgb(18, 18, 18);
+}
+
+.pcolor {
+    color: rgb(112, 106, 108);
+}
+
+.containerworkone {
+    display: flex;
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.badges img {
+    width: 13%;
+    margin: 2rem;
+}
+
+.containercard {
+    display: flex;
+    margin-top: 8rem;
+}
+
+.card {
+    margin: 0 .8rem;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-img-top {
+    border: none;
+    background-size: cover;
+}
+
+.card-body {
+    background-color: rgb(36, 36, 36);
+}
+
+.card-title {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.card-text{
+    color: white;
+    font-size: 1.05rem;
+}
+
+.badgecard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 5%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecardorange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(245, 90, 0, 10%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.badgecardred {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 5%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecardyellow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(245, 221, 0, 0.267);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecardgreen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 255, 0, 5%);
+    width: 11rem;
+    padding: .1rem .5rem;
+    border-radius: 70px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.badgecard img {
+    width: 34%;
+}
+.badgecardred img {
+    width: 34%;
+}
+.badgecardyellow img {
+    width: 34%;
+}
+.badgecardorange img {
+    width: 34%;
+}
+
+.badgecardgreen img {
+    width: 34%;
+}
+
+.welcome {
+    margin-left: .3rem;
+    margin-top: .8rem;
+    font-size: .9rem;
+}
+
+.badgecontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-titleone {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+

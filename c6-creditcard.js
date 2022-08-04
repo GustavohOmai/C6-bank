@@ -112,3 +112,19 @@ $(document).ready(function(){
     });
    });
 
+ window.onscroll = function() {
+        scroll();
+    }
+
+    function scroll() {
+        if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("header").style.background ="rgb(0,0,0)";
+        
+        }
+        else {
+            document.getElementById("header").style.background= "transparent";
+        }
+    }
+
+    
+  

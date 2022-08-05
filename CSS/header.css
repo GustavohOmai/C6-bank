@@ -10,15 +10,17 @@
 
 .openaccount {
     border-radius: 40px;
-    padding: .5rem 5rem;
+    padding: .5rem 5rem !important;
+    transition: .6s !important;
+    border-color: grey !important;
+    background-color: rgba(255, 255, 255, .1) !important;
+    color: white !important;
 }
 
 .openaccount:hover {
-    background-color: var(--grayhover);
+    border-color: white !important;
     color: var(--grayone);
 }
-
-
 
 .fs-7 {
     font-size: .8rem;
@@ -51,4 +53,29 @@ a {
     padding: 5px;
     border-radius: 7px;
     transform: scale(1.1);
+}
+
+
+@media(min-width:1600px) {
+
+.navbar > div {
+    align-items: center !important;
+    margin: 0 auto !important;
+    width: 70% !important;
+}
+
+.fs-6 {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+.dropdown {
+    margin: 0 1.7rem 0 1rem !important;
+}
+
+.openaccount {
+    margin: .5rem 2rem 0 0;
+}
+
+
 }
